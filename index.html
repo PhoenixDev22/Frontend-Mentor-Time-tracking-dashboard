@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Time tracking dashboard over different periods of time ">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!--- Render  all the elements normally and reset the margin and other cool things -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Main styles file -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main>
+    <h1 class="sr-only">Frontend Mentor | Time tracking dashboard</h1>
+    <div class="component">
+      <!-- The user part-->
+    <div class="box">
+      <div class="user__report">
+        <figure class="user__name">
+          <img src="images/image-jeremy.png" alt="Jeremy Robson">
+          <figcaption>
+            <p class="user__reprt-paragraph">Report for <span class="name">Jeremy Robson</span></p>
+          </figcaption>
+        </figure>
+        <ul class="happening__over">
+          <li class="over__period"><button type="button" class="active" data-time="daily">Daily</button></li>
+          <li class="over__period"><button type="button" data-time="weekly">Weekly</button></li>
+          <li class="over__period"><button type="button" data-time="monthly">Monthly</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- the user activities  --> 
+    <div class="box">
+          <!-- Work -->
+          <div class="work activity">
+          
+            <div class="sub__container">
+              <!-- the activity header -->
+              <div class="activity__header">
+                <h2 class="title">Work</h2>
+                <div class="points">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+              </div>
+              <!-- the number of hours -->
+              <div class="number__of-hours" >
+                <p id=""class="hours"><span class="current">5hrs</span></p>
+                <p class="activity__para"><span class="previous">Yesterday - 7hrs</span></p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Play -->
+        <div class=" play activity">
+          
+          <div class="sub__container">
+            <!-- the activity header -->
+            <div class="activity__header">
+              <h2 class="title">Play</h2>
+              <div class="points">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </div>
+            </div>
+            <!-- the number of hours -->
+            <div class="number__of-hours" >
+              <p id=""class="hours"><span class="current">1hr</span></p>
+              <p class="activity__para"><span class="previous">Yesterday - 2hrs</span></p>
+            </div>    
+          </div>       
+        </div>
+    </div>
+
+        <div class="box">
+        <!-- Study -->
+        <div class="study activity">
+          
+          <div class="sub__container">
+            <!-- the activity header -->
+            <div class="activity__header">
+              <h2 class="title">Study</h2>
+              <div class="points">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </div>
+            </div>
+            <!-- the number of hours -->
+            <div class="number__of-hours" >
+              <p id=""class="hours"><span class="current">0hrs</span></p>
+              <p class="activity__para"><span class="previous">Yesterday - 1hr</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Exercise -->
+        <div class="exercise activity">
+
+          <div class="sub__container">
+              <!-- the activity header -->
+            <div class="activity__header">
+              <h2 class="title">Exercise</h2>
+              <div class="points">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </div>
+            </div>
+            <!-- the number of hours -->
+            <div class="number__of-hours" >
+              <p id=""class="hours"><span class="current">1hr</span></p>
+              <p class="activity__para"><span class="previous">Yesterday - 1hr</span></p>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+        <div class="box">
+          <!-- Social -->
+        <div class="social activity">
+
+          <div class="sub__container">
+            <!-- the activity header -->
+            <div class="activity__header">
+              <h2 class="title">Social</h2>
+              <div class="points">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </div>
+            </div>
+            <!-- the number of hours -->
+            <div class="number__of-hours" >
+              <p id=""class="hours"><span class="current">1hr</span></p>
+              <p class="activity__para"><span class="previous">Yesterday - 3hrs</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Self Care -->
+        <div class="self-care activity">
+          <div class="sub__container">
+            <!-- the activity header -->
+            <div class="activity__header">
+              <h2 class="title">Self Care</h2>
+              <div class="points">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </div>
+            </div>
+            <!-- the number of hours -->
+            <div class="number__of-hours" >
+              <p id=""class="hours"><span class="current">0hrs</span></p>
+              <p class="activity__para"><span class="previous">Yesterday - 1hr</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--the footer   -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="link" href="https://www.frontendmentor.io/profile/PhoenixDev22" target="_blank" >PhoenixDev22 </a>.
+    </div>
+  </footer>
+  <!-- <script src="data.json"></script> -->
+  <script src="main.js"></script>
+</body>
+</html>

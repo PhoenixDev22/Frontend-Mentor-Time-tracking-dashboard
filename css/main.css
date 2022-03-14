@@ -1,0 +1,287 @@
+/* Global rules */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Primary Colors */
+
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue : hsl(195, 74%, 62%);
+    --Light-red : hsl(348, 100%, 68%);
+    --Lime-green : hsl(145, 58%, 55%);
+    --Violet : hsl(264, 64%, 52%);
+    --Soft-orange : hsl(43, 84%, 65%);
+
+    /*  Neutral Colors*/
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    /* font size and font family */
+    --fs-main: 1.125rem;
+    --ff--main: 'Rubik', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    background-color: transparent;
+    outline: none;
+    border: navajowhite;
+}
+body{
+    font-family: var(--ff--main);
+    background: var(--Very-dark-blue);
+    padding: 0 1.5rem;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main{
+    max-width: 31.25rem;
+    width:100%
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+.box{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+/* strat styling the user col */
+.user__report{
+    background-color: var(--Dark-blue);
+    width:100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.user__name{
+    background-color: var(--Blue);
+    padding: 1.75rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.user__name img{
+    border: 0.125em solid #fff;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.user__reprt-paragraph{
+    color: var(--Pale-Blue);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.name{
+    font-weight: 300;
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+    color: #fff
+}
+.happening__over{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1.75rem;
+    width: 100%;
+    cursor: pointer;
+}
+.over__period button{
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.over__period:hover{
+    color: #fff;
+}
+.over__period button.active{
+    color: #fff;
+}
+/* strat styling the user activities */
+
+.activity{
+    width: 100%;
+    border-radius: 1rem;
+    padding-top: 3rem;
+    background-repeat: no-repeat;
+    background-position: right 1rem top ;
+    cursor: pointer;
+}
+.sub__container{
+    border-radius: 1rem;
+    background-color: var(--Dark-blue);
+    padding:1.7rem;
+    transition: all .5s ease-in-out;
+}
+.activity:hover .sub__container{
+    background-color: hsl(235deg 47% 35%);
+}
+.activity__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.title{
+    font-weight: 500;
+}
+.points{
+    display: flex;
+}
+.points path{
+    transition: all .5s ease-in-out;
+}
+.points:hover path{
+    fill: var(--Light-red-work)
+}
+.number__of-hours{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 1rem
+}
+.hours{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.activity__para{
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: var(--Pale-Blue)
+}
+.work{
+    background-color: var(--Light-red-work);
+    background-image: url(../images/icon-work.svg);
+    background-position: right 1rem top -1rem;
+}
+.play{
+    background-color: var(--Soft-blue);
+    background-image: url(../images/icon-play.svg);
+}
+.study{
+    background-color: var(--Light-red);
+    background-image: url(../images/icon-study.svg);
+}
+.exercise{
+    background-color: var(--Lime-green);
+    background-image: url(../images/icon-exercise.svg);
+}
+.social{
+    background-color: var(--Violet);
+    background-image: url(../images/icon-social.svg);
+}
+.self-care{
+    background-color: var(--Soft-orange);
+    background-image: url(../images/icon-self-care.svg);
+    background-position: right 1rem top -1rem;
+}
+/* start styling the footer */
+footer{
+    position: unset;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1.7;
+}
+.link{
+    color: var(--Light-red);
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+.link:hover{
+    color: var(--Soft-blue);
+}
+.link:focus-visible, .link:focus{
+    outline: 0.2em  dashed var(--Soft-blue) ;
+}
+@media screen and (min-width: 43.75rem){
+    main{
+        max-width: 56.25rem;
+        width:100%
+    }
+    .component{
+        display: grid;
+        grid-template-columns:  repeat(2, minmax(19.063rem , 1fr));
+    }
+    .user__report{
+        height: 100%;
+    }
+    .user__name{
+        padding: 2.375rem 1.75rem 6rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .user__name img{
+        margin-bottom: 2rem;
+    }
+    .user__reprt-paragraph{
+        font-size: 0.9rem;
+    }
+    .name{
+        font-size:2.5rem;
+        max-width: 60%
+    }
+    .happening__over{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .over__period{
+        margin: 0.5rem 0
+    }
+    .number__of-hours{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hours{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (min-width: 75rem){
+    main{
+        max-width: 71.75rem;
+        width:100%
+    }
+    .component{
+        grid-template-columns:  repeat(4, minmax(16.25rem , 1fr));
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
